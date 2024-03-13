@@ -11,6 +11,7 @@ import Quiz from "./pages/Quiz"
 import DiscussionForum from "./pages/DiscussionForum"
 import Project from "./pages/Project"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 
 export default function App() {
@@ -31,6 +32,8 @@ export default function App() {
       <Route path="/forum" element={<DiscussionForum />}/>
 
     </Routes>
+    <Footer/>
     </BrowserRouter>
+
       )
 }
