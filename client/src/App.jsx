@@ -12,6 +12,7 @@ import DiscussionForum from "./pages/DiscussionForum"
 import Project from "./pages/Project"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import PrivateRoute from "./components/PrivateRoute"
 
 
 export default function App() {
@@ -23,10 +24,13 @@ export default function App() {
       <Route path="/aboutus" element={<AboutUs/>}/>
       <Route path="/sign-in" element={<SignIn />}/>
       <Route path="/sign-up" element={<SignUp />}/>
+      <Route element={<PrivateRoute/>}> 
+        <Route path="/dashboard" element={<Dashboard />}/>
+        </Route>
       <Route path="/projects" element={<Project />}/>
       <Route path="/cybersafetymodule" element={<CyberSafetyModule />}/>
       <Route path="/cybersecuritycareer" element={<CyberSecurityCareer />}/>
-      <Route path="/dashboard" element={<Dashboard />}/>
+     
       <Route path="/personalitytest" element={<PersonalityTest />}/>
       <Route path="/quiz" element={<Quiz />}/>
       <Route path="/forum" element={<DiscussionForum />}/>
