@@ -1,9 +1,9 @@
 import React from 'react';
-
+import backgroundImage from '../assets/img/giff.gif';
 const Home = () => {
   return (
     <div className="home" style={{ 
-      backgroundImage: `url('https://giffiles.alphacoders.com/215/215837.gif')`, 
+      backgroundImage: `url(${backgroundImage})`, 
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
       height: '100vh' 

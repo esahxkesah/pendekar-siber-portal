@@ -25,14 +25,14 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  100 JS Projects
+                  Siber Sejahtera
                 </Footer.Link>
                 <Footer.Link
                   href='/about'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Sahand's Blog
+                  Pendekar Siber Portal
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -40,7 +40,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-
               <Footer.Title title='Follow us' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.github.com/sahandghavidel'
+                  href='https://www.github.com/esahxkesah'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
