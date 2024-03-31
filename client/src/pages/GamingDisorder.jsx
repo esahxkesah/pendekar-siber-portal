@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs'; // Import the arrow icon from react-icons library
 
-const CyberbullyingPage = () => {
+const GamingDisorderPage = () => {
   const whatRef = useRef(null);
   const impactRef = useRef(null);
   const controlsRef = useRef(null);
@@ -31,7 +31,7 @@ const CyberbullyingPage = () => {
           </ul>
         </nav>
         <section ref={whatRef} className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">What is Cyberbullying</h2>
+          <h2 className="text-3xl font-bold mb-4">What is Gaming Disorder</h2>
           <p>Cyberbullying is a pervasive issue in today's digital age, characterized by the use of electronic communication to harass, intimidate, or harm others. It takes various forms, including spreading rumors, sharing embarrassing or manipulated photos or videos, or sending threatening messages.<br></br><br></br> Unlike traditional bullying, cyberbullying can occur 24/7 and reach a wide audience instantly, making it particularly insidious and difficult to escape. The fact is that cyberbullying happens more often than we think, and some of the most severe cases lead to the loss of lives.</p><br></br>
           <ul>
             <li>It can lead to emotional distress, anxiety, and depression.</li>
@@ -62,4 +62,4 @@ const CyberbullyingPage = () => {
   );
 };
 
-export default CyberbullyingPage;
+export default GamingDisorderPage;
