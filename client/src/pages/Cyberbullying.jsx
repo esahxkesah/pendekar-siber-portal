@@ -31,7 +31,7 @@ const CyberbullyingPage = () => {
           </ul>
         </nav>
         <section ref={whatRef} className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">What is Cyberbullying</h2>
+          <h2 className="text-3xl font-bold mb-4">hello pini What is Cyberbullying</h2>
           <p className="">Description of what cyberbullying is...
           Cyberbullying is a pervasive issue in today's digital age, characterized by the use of electronic communication to harass, intimidate, or harm others. It takes various forms, including spreading rumors, sharing embarrassing or manipulated photos or videos, or sending threatening messages. Unlike traditional bullying, cyberbullying can occur 24/7 and reach a wide audience instantly, making it particularly insidious and difficult to escape. The fact is that cyberbullying happens more often than we think, and some of the most severe cases lead to the loss of lives. 
 </p>
