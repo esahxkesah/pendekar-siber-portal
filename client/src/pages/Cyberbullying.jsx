@@ -23,7 +23,7 @@ const CyberbullyingPage = () => {
         <BsArrowLeft className="inline-block mr-2" /> Back to CyberSafety Modules
       </Link>
       <div className="text-center bg-blue-800 py-3">
-    <h1 className="text-4xl font-bold text-white"> halu hal CYBERBULLYING</h1>
+    <h1 className="text-4xl font-bold text-white"> selamat sejahtera CYBERBULLYING</h1>
   </div><br></br>
       <nav className="mb-8">
         <ul className="flex justify-center space-x-4">
