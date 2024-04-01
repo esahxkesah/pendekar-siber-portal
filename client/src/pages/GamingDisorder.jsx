@@ -27,21 +27,22 @@ const GamingDisorderPage = () => {
       <div className="text-center bg-blue-800 py-3">
     <h1 className="text-4xl font-bold text-white"> GAMING DISORDER</h1>
   </div><br></br>
-      <nav className="mb-8">
+  <nav className="mb-8">
         <ul className="flex justify-center space-x-4">
           <li onClick={() => scrollToSection(whatRef)}>
-            <Link to="#" className="navigation-link">What</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>What</Link>
           </li>
           <li onClick={() => scrollToSection(impactRef)}>
-            <Link to="#" className="navigation-link">Impact</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>Impact</Link>
           </li>
           <li onClick={() => scrollToSection(controlsRef)}>
-            <Link to="#" className="navigation-link">Controls</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>Controls</Link>
           </li>
         </ul>
       </nav>
       <section ref={whatRef} className="mb-8">
-  <h2 className="text-3xl font-bold mb-4">What is Gaming Disorder</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center" >What is Gaming Disorder</h2>
+
   <p style={{ textAlign: 'justify' }}>
     <strong>Gaming disorder is a mental health condition recognized by the World Health Organization (WHO) characterized by a pattern of persistent and recurrent gaming behavior, either online or offline, that leads to significant impairment or distress. This disorder typically involves a loss of control over gaming, prioritizing gaming over other activities, and continuing to play despite negative consequences.</strong>
   </p><br></br>
@@ -90,7 +91,7 @@ const GamingDisorderPage = () => {
 </section>
 
 <section ref={impactRef} className="mb-8">
-  <h2 className="text-3xl font-bold mb-4">Impact of Gaming Disorder</h2>
+  <h2 className="text-3xl font-bold mb-4 text-center">Impact of Gaming Disorder</h2>
   <p style={{ textAlign: 'justify' }}>
     <strong>It's important to note that not everyone who plays video games excessively will develop gaming disorder. The condition typically involves a pattern of persistent and recurrent gaming behavior that escalates to the point of impairment or distress. It can have significant impacts on various aspects of an individual's life, affecting their physical, mental, social, and academic or occupational well-being. Early recognition and intervention are crucial in addressing gaming disorder and mitigating its adverse effects.</strong> </p><br></br>
   <p style={{ textAlign: 'justify' }}>
@@ -143,7 +144,7 @@ const GamingDisorderPage = () => {
 </section>
 
 <section ref={controlsRef} className="mb-8">
-  <h2 className="text-3xl font-bold mb-4">Controls for Gaming Disorder</h2>
+  <h2 className="text-3xl font-bold mb-4 text-center">Controls for Gaming Disorder</h2>
   <p style={{ textAlign: 'justify' }}>
     <strong>Individual, familial, societal, and regulatory measures need to work collaboratively to prevent and reduce the occurrence of gaming disorder, promoting the well-being and resilience of individuals and communities in the digital age.</strong> </p><br></br>
   <p style={{ textAlign: 'justify' }}>

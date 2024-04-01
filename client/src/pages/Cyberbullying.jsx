@@ -28,22 +28,21 @@ const CyberbullyingPage = () => {
       <nav className="mb-8">
         <ul className="flex justify-center space-x-4">
           <li onClick={() => scrollToSection(whatRef)}>
-            <Link to="#" className="navigation-link">What</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>What</Link>
           </li>
           <li onClick={() => scrollToSection(impactRef)}>
-            <Link to="#" className="navigation-link">Impact</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>Impact</Link>
           </li>
           <li onClick={() => scrollToSection(controlsRef)}>
-            <Link to="#" className="navigation-link">Controls</Link>
+            <Link to="#" className="navigation-link" style={{ fontWeight: 'bold', fontSize: 'larger', textDecoration: 'underline' }}>Controls</Link>
           </li>
         </ul>
       </nav>
-        <section ref={whatRef} className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">What is Cyberbullying</h2>
+        <section ref={whatRef} className="mb-8" >
+          <h2 className="text-3xl font-bold mb-4" style={{ textAlign: 'center' }}>What is Cyberbullying</h2>
           <p style={{ textAlign: 'justify' }}><strong>Cyberbullying is a pervasive issue in today's digital age, characterized by the use of electronic communication to harass, intimidate, or harm others. It takes various forms, including spreading rumors, sharing embarrassing or manipulated photos or videos, or sending threatening messages.<br></br><br></br>Unlike traditional bullying, cyberbullying can occur 24/7 and reach a wide audience instantly, making it particularly insidious and difficult to escape. The fact is that cyberbullying happens more often than we think, and some of the most severe cases lead to the loss of lives.</strong><br></br><br></br></p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/niaDJdEXk9U?si=55vpP579MGTjZ1qe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br><br></br>
           <p style={{ textAlign: 'justify' }}><strong>Here are some common types of cyberbullying: </strong></p><br></br>
-
           <ul>
   <li>
    <strong> 1. Social Media Bullying:</strong>
@@ -91,17 +90,18 @@ const CyberbullyingPage = () => {
 <p style={{ textAlign: 'justify' }}>  <strong>Cyberbullying has drastically increased in recent years, with the wide use of social media and the internet. With more children being on the internet and more adults, both male and female, being involved in cyberbullying cases. </strong></p><br></br>
 <ul>
   <li>
-  <strong> Below are a few instances of cyberbullying that occurred in Malaysia: </strong>
+  <strong> 
+Below are a few instances of cyberbullying that occurred in Malaysia, along with links to the respective cases: </strong>
     <ul>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://www.sinardaily.my/article/177853/focus/national/mother-of-three-believed-to-have-committed-suicide-after-alleged-cyber-bullying">a) Mother of three believed to have committed suicide after alleged cyber bullying.</a> <br></br>gambar</li>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://amp.theguardian.com/world/2019/may/15/teenage-girl-kills-herself-after-instagram-poll-in-malaysia">b) Teenage girl kills herself ‘after Instagram poll’ in Malaysia.</a> <br></br>gambar</li>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://worldofbuzz.com/20yo-girl-from-penang-committed-suicide-after-fb-page-spread-fake-info-cyberbullied-her">c) 20 years old girl from Penang committed suicide after Facebook Page spread fake info and cyberbullied her.</a> <br></br>gambar</li><br></br><br></br><br></br>
+      <li style={{ marginLeft: '20px' }}><br></br><a href="https://www.sinardaily.my/article/177853/focus/national/mother-of-three-believed-to-have-committed-suicide-after-alleged-cyber-bullying"><u>a) Mother of three believed to have committed suicide after alleged cyber bullying.</u></a> <br></br> <br></br><img src="https://www.sinarharian.com.my/sinarenglish/uploads/images/2022/08/09/1867031.jpg"style={{ width: '30%' }} /></li><br></br>
+      <li style={{ marginLeft: '20px' }}><br></br><a href="https://amp.theguardian.com/world/2019/may/15/teenage-girl-kills-herself-after-instagram-poll-in-malaysia"><u>b) Teenage girl kills herself ‘after Instagram poll’ in Malaysia.</u></a> <br></br> <br></br><img src="https://i.guim.co.uk/img/media/e35416b45cb5dba002dc9bbd7bbf495e311aa16d/0_0_2007_1204/master/2007.jpg?width=620&quality=85&auto=format&fit=max&s=65b8aa5f07b130002a2b44b627cd4ea6" style={{ width: '30%' }} /></li><br></br>
+      <li style={{ marginLeft: '20px' }}><br></br><a href="https://worldofbuzz.com/20yo-girl-from-penang-committed-suicide-after-fb-page-spread-fake-info-cyberbullied-her"><u>c) 20 years old girl from Penang committed suicide after Facebook Page spread fake info and cyberbullied her.</u></a> <br></br><br></br><img src="https://worldofbuzz.com/wp-content/uploads/2020/05/newft.jpg" style={{ width: '30%' }}/></li><br></br><br></br><br></br>
       </ul>
   </li>
 </ul>
         </section>
-        <section ref={impactRef} className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Impact of Cyberbullying</h2>
+        <section ref={impactRef} className="mb-8" >
+          <h2 className="text-3xl font-bold mb-4" style={{ textAlign: 'center' }}>Impact of Cyberbullying</h2>
   <p style={{ textAlign: 'justify' }}>
     <strong>Cyberbullying goes beyond individual victims, affecting communities, physical health, mental well-being, education, and cybersecurity. It has significant implications for both individuals and society at large.</strong>
   </p>
@@ -150,8 +150,8 @@ const CyberbullyingPage = () => {
     </li>
   </ul>
         </section>
-        <section ref={controlsRef} className="mb-8">
-  <h2 className="text-3xl font-bold mb-4">Controls for Cyberbullying</h2>
+        <section ref={controlsRef} className="mb-8" >
+  <h2 className="text-3xl font-bold mb-4" style={{ textAlign: 'center' }}>Controls for Cyberbullying</h2>
   <p style={{ textAlign: 'justify' }}><strong>Preventing cyberbullying requires an approach that addresses various aspects of individual behavior, community dynamics, and societal norms. It underscores the importance of proactive measures to prevent and address cyberbullying effectively, promoting a safer and more inclusive online environment for all.</strong></p><br></br>
   <p style={{ textAlign: 'justify' }}><strong>
     Here are some controls that can be implemented to prevent cyberbullying:
