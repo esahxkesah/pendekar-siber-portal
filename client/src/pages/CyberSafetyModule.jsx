@@ -38,7 +38,7 @@ export default function CyberSafetyModule() {
             <p className="text-gray-700 dark:text-gray-400">
               Understand the signs and risks of gaming disorder.
             </p>
-            <Link to="/gaming-disorder">
+            <Link to="/gamingdisorder">
               <Button className="mt-4 btn-primary w-full">
                 Learn More
               </Button>
@@ -51,12 +51,12 @@ export default function CyberSafetyModule() {
           <img src={sexualExploitationImage} alt="Sexual Exploitation" className="w-full h-64 object-cover rounded-t-lg" />
           <div className="card-body p-4">
             <h5 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-              Sexual Exploitation
+              Online Sexual Exploitation
             </h5>
             <p className="text-gray-700 dark:text-gray-400">
               Explore resources to protect against sexual exploitation online.
             </p>
-            <Link to="/sexual-exploitation">
+            <Link to="/SexualExploitation">
               <Button className="mt-4 w-full blue">
                 Learn More
               </Button>
