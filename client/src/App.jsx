@@ -14,6 +14,9 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import PrivateRoute from "./components/PrivateRoute"
 import Cyberbullying from "./pages/Cyberbullying"
+import SexualExploitationPage from "./pages/SexualExploitation"
+import GamingDisorderPage from "./pages/GamingDisorder"
+import CyberbullyingPage from "./pages/Cyberbullying"
 
 
 export default function App() {
@@ -35,7 +38,9 @@ export default function App() {
       <Route path="/personalitytest" element={<PersonalityTest />}/>
       <Route path="/quiz" element={<Quiz />}/>
       <Route path="/forum" element={<DiscussionForum />}/>
-      <Route path="/cyberbullying" element={<Cyberbullying />}/>
+      <Route path="/cyberbullying" element={<CyberbullyingPage />}/>
+      <Route path="/sexualexploitation" element={<SexualExploitationPage />}/>
+      <Route path="/gamingdisorder" element={<GamingDisorderPage />}/>
 
     </Routes>
     <Footer/>
