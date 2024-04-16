@@ -21,6 +21,11 @@ const userSchema = new mongoose.Schema({
         default:
             'https://i.stack.imgur.com/34AD2.jpg',
     },
+    isAdmin:{
+        type: Boolean,
+        default: false,
+    }
+
     }, {timestamps: true}
 );
 
