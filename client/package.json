@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@quillforms/react-renderer-utils": "^5.11.0",
+    "@quillforms/renderer-core": "^5.9.0",
     "@reduxjs/toolkit": "^2.2.1",
     "bootstrap": "^5.3.3",
     "firebase": "^10.8.1",
