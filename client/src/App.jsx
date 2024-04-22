@@ -16,6 +16,8 @@ import PrivateRoute from "./components/PrivateRoute"
 import SexualExploitationPage from "./pages/SexualExploitation"
 import GamingDisorderPage from "./pages/GamingDisorder"
 import CyberbullyingPage from "./pages/Cyberbullying"
+import CreatePost from "./pages/CreatePost"
+import OnlyAdminPrivateRoute from "./components/OnlyAdminPrivateRoute"
 
 
 export default function App() {
@@ -29,6 +31,9 @@ export default function App() {
       <Route path="/sign-up" element={<SignUp />}/>
       <Route element={<PrivateRoute/>}> 
         <Route path="/dashboard" element={<Dashboard />}/>
+        </Route>
+      <Route element={<OnlyAdminPrivateRoute/>}> 
+        <Route path="/create-post" element={<CreatePost />}/>
         </Route>
       <Route path="/projects" element={<Project />}/>
       <Route path="/cybersafetymodule" element={<CyberSafetyModule />}/>
