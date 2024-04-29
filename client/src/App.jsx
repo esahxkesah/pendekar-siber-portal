@@ -18,23 +18,30 @@ import GamingDisorderPage from "./pages/GamingDisorder"
 import CyberbullyingPage from "./pages/Cyberbullying"
 import CreatePost from "./pages/CreatePost"
 import OnlyAdminPrivateRoute from "./components/OnlyAdminPrivateRoute"
+import UpdatePost from "./pages/UpdatePost"
+import PostPage from "./pages/PostPage"
+import ScrollToTop from "./components/ScrollToTop"
+import Search from "./pages/Search"
 
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <Header/>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutus" element={<AboutUs/>}/>
       <Route path="/sign-in" element={<SignIn />}/>
       <Route path="/sign-up" element={<SignUp />}/>
+      <Route path='/search' element={<Search />} />
       <Route element={<PrivateRoute/>}> 
         <Route path="/dashboard" element={<Dashboard />}/>
         </Route>
       <Route element={<OnlyAdminPrivateRoute/>}> 
         <Route path="/create-post" element={<CreatePost />}/>
-        </Route>
+        <Route path="/update-post/:postId" element={<UpdatePost />}/>
+      </Route>
       <Route path="/projects" element={<Project />}/>
       <Route path="/cybersafetymodule" element={<CyberSafetyModule />}/>
       <Route path="/cybersecuritycareer" element={<CyberSecurityCareer />}/>
@@ -45,6 +52,8 @@ export default function App() {
       <Route path="/cyberbullying" element={<CyberbullyingPage />}/>
       <Route path="/sexualexploitation" element={<SexualExploitationPage />}/>
       <Route path="/gamingdisorder" element={<GamingDisorderPage />}/>
+      <Route path="/post/:postSlug" element={<PostPage />}/>
+
 
     </Routes>
     <Footer/>
