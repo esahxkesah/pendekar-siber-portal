@@ -9,11 +9,11 @@ export default function Quiz1() {
 
   return (
     <div>
-      <div className="container mx-auto p-8">
-        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Gaming Disorder Quiz</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+ <div className="container mx-auto p-8">
+      <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Cyberbullying Quiz</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
       </div>
-      <div style={{ width: "100%", height: "70vh" }}>
+      <div style={{ width: "100%", height: "65vh" }}>
         <Form
           formId="1"
           formObj={{
@@ -22,11 +22,11 @@ export default function Quiz1() {
                 name: "welcome-screen",
                 id: "jg1401r",
                 attributes: {
-                  label: "Test your knowledge on gaming disorder",
+                  label: "Test your knowledge on cyberbullying",
                   description: "Please answer the following questions to test your knowledge.",
                   attachment: {
                     type: "image",
-                    url: "https://images.ctfassets.net/cnu0m8re1exe/4g8ng6Xo7Qau8aiV6nIGK/a8c1fbebff06904aa0ac44c1b5692ad0/Untitled_design__88_.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill"
+                    url: "https://www.nea.org/sites/default/files/styles/1920wide/public/2022-09/cyber-bullying.jpeg?itok=iVpZp2Dp"
                   }
                 }
               },
@@ -37,23 +37,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What is gaming disorder recognized as by the World Health Organization (WHO)?",
+                  label: "1. What is cyberbullying?",
                   choices: [
                     {
-                      label: "A hobby",
+                      label: "Physical bullying",
                       value: "a"
                     },
                     {
-                      label: "A mental health condition",
-                      value: "b",
+                      label: "Verbal bullying",
+                      value: "b"
+                    },
+                    {
+                      label: "Harassment using electronic communication",
+                      value: "c",
                       correct: true
                     },
                     {
-                      label: "A social activity",
-                      value: "c"
-                    },
-                    {
-                      label: "A sport",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -66,23 +66,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "Which of the following is a characteristic of gaming disorder?",
+                  label: "2. Which of the following is NOT a common form of cyberbullying?",
                   choices: [
                     {
-                      label: "Occasional gaming for relaxation",
+                      label: "Social media bullying",
                       value: "a"
                     },
                     {
-                      label: "Persistent and recurrent gaming behavior",
-                      value: "b",
+                      label: "Doxing",
+                      value: "b"
+                    },
+                    {
+                      label: "Physical assault",
+                      value: "c",
                       correct: true
                     },
                     {
-                      label: "Playing games only with friends",
-                      value: "c"
-                    },
-                    {
-                      label: "Limited gaming time on weekends",
+                      label: "Sexting coercion",
                       value: "d"
                     }
                   ]
@@ -95,24 +95,24 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What is one reason why gaming disorder can develop?",
+                  label: "3. How does cyberbullying differ from traditional bullying?",
                   choices: [
                     {
-                      label: "Lack of interest in gaming",
+                      label: "It can occur 24/7",
                       value: "a"
                     },
                     {
-                      label: "Social interaction",
+                      label: "It reaches a wider audience instantly",
                       value: "b"
                     },
                     {
-                      label: "Physical activity",
-                      value: "c"
+                      label: "Both a and b",
+                      value: "c",
+                      correct: true
                     },
                     {
-                      label: "Reading books",
-                      value: "d",
-                      correct: true
+                      label: "None of the above",
+                      value: "d"
                     }
                   ]
                 }
@@ -124,23 +124,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "How can gaming serve as a coping mechanism?",
+                  label: "4. Which of the following is an example of social media bullying?",
                   choices: [
                     {
-                      label: "By increasing stress levels",
+                      label: "Sending threatening messages via email",
                       value: "a"
                     },
                     {
-                      label: "By promoting social interaction",
-                      value: "b"
-                    },
-                    {
-                      label: "By providing an escape from real-life problems",
-                      value: "c",
+                      label: "Posting mean comments on Facebook",
+                      value: "b",
                       correct: true
                     },
                     {
-                      label: "By encouraging outdoor activities",
+                      label: "Physically assaulting someone",
+                      value: "c"
+                    },
+                    {
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -153,23 +153,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "Which neurotransmitter is associated with pleasure and reward in the brain?",
+                  label: "5. What is doxing?",
                   choices: [
                     {
-                      label: "Serotonin",
-                      value: "a"
-                    },
-                    {
-                      label: "Dopamine",
-                      value: "b",
+                      label: "Sharing personal information about someone without their permission",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "Endorphins",
+                      label: "Sending supportive messages to someone online",
+                      value: "b"
+                    },
+                    {
+                      label: "Organizing a group to bully someone",
                       value: "c"
                     },
                     {
-                      label: "GABA",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -182,23 +182,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What impact can gaming disorder have on physical health?",
+                  label: "6. What is the potential danger of doxing?",
                   choices: [
                     {
-                      label: "Improved sleep quality",
-                      value: "a"
-                    },
-                    {
-                      label: "Musculoskeletal problems",
-                      value: "b",
+                      label: "Exposing the person to harassment or threats",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "Increased physical activity",
+                      label: "Building trust with others online",
+                      value: "b"
+                    },
+                    {
+                      label: "Making new friends",
                       value: "c"
                     },
                     {
-                      label: "Weight loss",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -211,23 +211,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What are some mental health issues associated with gaming disorder?",
+                  label: "7. What is sexting coercion?",
                   choices: [
                     {
-                      label: "Decreased stress levels",
-                      value: "a"
-                    },
-                    {
-                      label: "Increased feelings of loneliness",
-                      value: "b",
+                      label: "Encouraging someone to send intimate photos or videos",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "Enhanced social skills",
+                      label: "Sharing someone's private information",
+                      value: "b"
+                    },
+                    {
+                      label: "Threatening someone online",
                       value: "c"
                     },
                     {
-                      label: "Improved self-esteem",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -240,23 +240,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "How can excessive gaming affect social interactions?",
+                  label: "8. How can group attacks affect a victim of cyberbullying?",
                   choices: [
                     {
-                      label: "By strengthening relationships",
+                      label: "It can make the victim feel isolated",
                       value: "a"
                     },
                     {
-                      label: "By encouraging face-to-face communication",
+                      label: "It can lead to feelings of overwhelm",
                       value: "b"
                     },
                     {
-                      label: "By leading to social withdrawal and isolation",
+                      label: "Both a and b",
                       value: "c",
                       correct: true
                     },
                     {
-                      label: "By promoting teamwork",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -269,24 +269,16 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What impact can gaming disorder have on academic or occupational functioning?",
+                  label: "9. True or False: Cyberbullying has decreased in recent years.",
                   choices: [
                     {
-                      label: "Improved concentration",
+                      label: "True",
                       value: "a"
                     },
                     {
-                      label: "Decreased productivity",
+                      label: "False",
                       value: "b",
                       correct: true
-                    },
-                    {
-                      label: "Enhanced problem-solving skills",
-                      value: "c"
-                    },
-                    {
-                      label: "Increased motivation",
-                      value: "d"
                     }
                   ]
                 }
@@ -298,24 +290,182 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "Which of the following may be a sign of gaming disorder?",
+                  label: "10. Which of the following is NOT an impact of cyberbullying?",
                   choices: [
                     {
-                      label: "Balanced lifestyle",
-                      value: "a"
-                    },
-                    {
-                      label: "Preoccupation with gaming",
-                      value: "b",
+                      label: "Positive mental health",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "Limited screen time",
+                      label: "Physical health issues",
+                      value: "b"
+                    },
+                    {
+                      label: "Community fracture",
                       value: "c"
                     },
                     {
-                      label: "Engagement in various hobbies",
+                      label: "Educational and professional consequences",
                       value: "d"
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294m",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "11. How can chronic stress from cyberbullying manifest physically?",
+                  choices: [
+                    {
+                      label: "Headaches",
+                      value: "a"
+                    },
+                    {
+                      label: "Muscle tension",
+                      value: "b"
+                    },
+                    {
+                      label: "Fatigue",
+                      value: "c"
+                    },
+                    {
+                      label: "All of the above",
+                      value: "d",
+                      correct: true
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294n",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "12. True or False: Cyberbullying only affects the victim's mental well-being.",
+                  choices: [
+                    {
+                      label: "True",
+                      value: "a"
+                    },
+                    {
+                      label: "False",
+                      value: "b",
+                      correct: true
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294o",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "13. What is one educational measure to prevent cyberbullying?",
+                  choices: [
+                    {
+                      label: "Encouraging bystanders to intervene",
+                      value: "a"
+                    },
+                    {
+                      label: "Building strong, connected communities",
+                      value: "b"
+                    },
+                    {
+                      label: "Promoting digital literacy",
+                      value: "c",
+                      correct: true
+                    },
+                    {
+                      label: "None of the above",
+                      value: "d"
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294p",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "14. What is one regulatory measure to prevent cyberbullying?",
+                  choices: [
+                    {
+                      label: "Implementing clear policies and regulations",
+                      value: "a",
+                      correct: true
+                    },
+                    {
+                      label: "Promoting inclusivity and diversity",
+                      value: "b"
+                    },
+                    {
+                      label: "Providing peer support and intervention",
+                      value: "c"
+                    },
+                    {
+                      label: "None of the above",
+                      value: "d"
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294q",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "15. True or False: Bystanders can play a role in preventing cyberbullying by speaking out against online abuse.",
+                  choices: [
+                    {
+                      label: "True",
+                      value: "a",
+                      correct: true
+                    },
+                    {
+                      label: "False",
+                      value: "b"
+                    }
+                  ]
+                }
+              },
+              {
+                name: "multiple-choice",
+                id: "gqr1294r",
+                attributes: {
+                  required: true,
+                  multiple: false,
+                  verticalAlign: true,
+                  label: "16. What is the importance of communicating with trusted individuals for victims of cyberbullying?",
+                  choices: [
+                    {
+                      label: "It provides emotional support",
+                      value: "a"
+                    },
+                    {
+                      label: "It helps in devising coping strategies",
+                      value: "b"
+                    },
+                    {
+                      label: "It encourages seeking professional assistance if needed",
+                      value: "c"
+                    },
+                    {
+                      label: "All of the above",
+                      value: "d",
+                      correct: true
                     }
                   ]
                 }
@@ -327,24 +477,16 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What is one strategy to mitigate the risk of gaming disorder?",
+                  label: "17. True or False: Discussing cyberbullying with someone who cares can foster a sense of validation and connection.",
                   choices: [
                     {
-                      label: "Encouraging excessive gaming",
-                      value: "a"
-                    },
-                    {
-                      label: "Setting screen time limits",
-                      value: "b",
+                      label: "True",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "Ignoring gaming habits",
-                      value: "c"
-                    },
-                    {
-                      label: "Promoting gaming as the only activity",
-                      value: "d"
+                      label: "False",
+                      value: "b"
                     }
                   ]
                 }
@@ -356,23 +498,23 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "How can fostering open communication help prevent gaming disorder?",
+                  label: "18. How does cyberbullying impact mental health?",
                   choices: [
                     {
-                      label: "By discouraging dialogue about gaming habits",
-                      value: "a"
-                    },
-                    {
-                      label: "By creating a supportive environment",
-                      value: "b",
+                      label: "It can lead to depression, anxiety, and low self-esteem",
+                      value: "a",
                       correct: true
                     },
                     {
-                      label: "By promoting judgmental attitudes",
+                      label: "It can cause physical health issues",
+                      value: "b"
+                    },
+                    {
+                      label: "It can fracture communities",
                       value: "c"
                     },
                     {
-                      label: "By avoiding discussions about gaming",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
@@ -385,24 +527,16 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What is one responsible gaming practice?",
+                  label: "19. True or False: Cyberbullying poses no cybersecurity risks.",
                   choices: [
                     {
-                      label: "Playing games for long periods without breaks",
+                      label: "True",
                       value: "a"
                     },
                     {
-                      label: "Balancing gaming with other activities",
+                      label: "False",
                       value: "b",
                       correct: true
-                    },
-                    {
-                      label: "Ignoring signs of excessive gaming behavior",
-                      value: "c"
-                    },
-                    {
-                      label: "Spending excessive amounts of money on games",
-                      value: "d"
                     }
                   ]
                 }
@@ -414,203 +548,29 @@ export default function Quiz1() {
                   required: true,
                   multiple: false,
                   verticalAlign: true,
-                  label: "What are healthy coping mechanisms for managing stress without relying solely on gaming?",
+                  label: "20. What is the ultimate goal of preventive measures against cyberbullying?",
                   choices: [
                     {
-                      label: "Exercise, mindfulness, and spending time with loved ones",
+                      label: "To promote a safer and more inclusive online environment",
                       value: "a",
                       correct: true
                     },
                     {
-                      label: "Playing games for extended periods",
+                      label: "To increase the prevalence of cyberbullying",
                       value: "b"
                     },
                     {
-                      label: "Ignoring stressors and avoiding social interaction",
+                      label: "Both a and b",
                       value: "c"
                     },
                     {
-                      label: "Spending all free time gaming",
+                      label: "None of the above",
                       value: "d"
                     }
                   ]
                 }
               },
-              {
-                name: "multiple-choice",
-                id: "gqr1294w",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "When seeking professional support for gaming-related concerns, who can individuals consult?",
-                  choices: [
-                    {
-                      label: "Friends and family members only",
-                      value: "a"
-                    },
-                    {
-                      label: "Mental health professionals, counselors, or addiction specialists",
-                      value: "b",
-                      correct: true
-                    },
-                    {
-                      label: "Strangers on the internet",
-                      value: "c"
-                    },
-                    {
-                      label: "Gaming enthusiasts",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-              {
-                name: "multiple-choice",
-                id: "gqr1294x",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "What is the primary goal of setting screen time limits?",
-                  choices: [
-                    {
-                      label: "To encourage excessive gaming",
-                      value: "a"
-                    },
-                    {
-                      label: "To promote balanced lifestyles",
-                      value: "b",
-                      correct: true
-                    },
-                    {
-                      label: "To restrict access to gaming devices",
-                      value: "c"
-                    },
-                    {
-                      label: "To discourage physical activity",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-              {
-                name: "multiple-choice",
-                id: "gqr1294y",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "Which of the following is NOT an impact of gaming disorder?",
-                  choices: [
-                    {
-                      label: "Financial stability",
-                      value: "a",
-                      correct: true
-                    },
-                    {
-                      label: "Social withdrawal and isolation",
-                      value: "b"
-                    },
-                    {
-                      label: "Academic or occupational dysfunction",
-                      value: "c"
-                    },
-                    {
-                      label: "Physical health problems",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-              {
-                name: "multiple-choice",
-                id: "gqr1294z",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "How can reward systems in video games contribute to addictive behavior?",
-                  choices: [
-                    {
-                      label: "By promoting responsible gaming",
-                      value: "a"
-                    },
-                    {
-                      label: "By stimulating the release of dopamine in the brain",
-                      value: "b",
-                      correct: true
-                    },
-                    {
-                      label: "By encouraging breaks from gaming",
-                      value: "c"
-                    },
-                    {
-                      label: "By discouraging social interaction",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-              {
-                name: "multiple-choice",
-                id: "gqr1294aa",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "What can an enabling environment facilitate in relation to gaming behavior?",
-                  choices: [
-                    {
-                      label: "Decreased gaming habits",
-                      value: "a"
-                    },
-                    {
-                      label: "Responsible gaming practices",
-                      value: "b"
-                    },
-                    {
-                      label: "Escalation of gaming behavior",
-                      value: "c",
-                      correct: true
-                    },
-                    {
-                      label: "Limited access to gaming devices",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-              {
-                name: "multiple-choice",
-                id: "gqr1294ab",
-                attributes: {
-                  required: true,
-                  multiple: false,
-                  verticalAlign: true,
-                  label: "Why is early recognition and intervention crucial in addressing gaming disorder?",
-                  choices: [
-                    {
-                      label: "To promote excessive gaming",
-                      value: "a"
-                    },
-                    {
-                      label: "To mitigate adverse effects",
-                      value: "b",
-                      correct: true
-                    },
-                    {
-                      label: "To discourage open communication",
-                      value: "c"
-                    },
-                    {
-                      label: "To encourage social withdrawal",
-                      value: "d"
-                    }
-                  ]
-                }
-              },
-            ]
+            ],
           }}
           onSubmit={(data, { completeForm, setIsSubmitting, goToBlock, setSubmissionErr }) => {
             setFormData(data);
@@ -621,8 +581,14 @@ export default function Quiz1() {
               completeForm();
             }, 500);
           }}
-          />
-        </div>
+        />
       </div>
-    );
-  }
+      {formData && (
+        <div>
+          <h3>Submitted Data:</h3>
+          <pre>{JSON.stringify(formData, null, 2)}</pre>
+        </div>
+      )}
+    </div>
+  );
+}

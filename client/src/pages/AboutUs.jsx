@@ -3,11 +3,11 @@ import { Accordion, Carousel } from "flowbite-react";
 export default function AboutUs() {
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"> About Us</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white "> About Us</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     </div>
 
-      <div className="frame rounded-lg shadow-md p-8">
+      <div className="frame rounded-lg shadow-md">
         <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
           
     {/* Add picture here */}
@@ -47,13 +47,13 @@ export default function AboutUs() {
 
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
-                  <Carousel slideInterval={7000}>
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-                  </Carousel>
+                <Carousel slideInterval={7000}>
+                  <img src="https://i.postimg.cc/gJf4GM92/9.png" alt="..." />
+                  <img src="https://i.postimg.cc/c1nXFNYg/10.png" alt="..." />
+                  <img src="https://i.postimg.cc/3RynMscq/11.png" alt="..." />
+                  <img src="https://i.postimg.cc/L5LD5zRB/12.png" alt="..." />
+                  <img src="https://i.postimg.cc/SNbV5t7Z/13.png" alt="..." />                
+                </Carousel>
                 </div>
               </Accordion.Content>
             </Accordion.Panel>
@@ -79,11 +79,14 @@ export default function AboutUs() {
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
                   <Carousel slideInterval={7000}>
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                  <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                  <img src="https://i.postimg.cc/rsrn4BG4/1.png" alt="..." />
+                  <img src="https://i.postimg.cc/vZMq1S41/2.png" alt="..." />
+                  <img src="https://i.postimg.cc/TPNC4dCm/3.png" alt="..." />
+                  <img src="https://i.postimg.cc/DfJYRGVz/4.png" alt="..." />
+                  <img src="https://i.postimg.cc/jqpkTjK4/5.png" alt="..." />
+                  <img src="https://i.postimg.cc/523P8qzs/6.png" alt="..." />
+                  <img src="https://i.postimg.cc/dtGNVKVP/7.png" alt="..." />
+                  <img src="https://i.postimg.cc/TP3t0Lqf/8.png" alt="..." />   
                     </Carousel>
                 </div>
               </Accordion.Content>
@@ -141,11 +144,13 @@ export default function AboutUs() {
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
                   <Carousel slideInterval={7000}>
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                    <img src="https://i.postimg.cc/13JH8RxT/14.png" alt="..." />
+                    <img src="https://i.postimg.cc/9FP1jtLc/15.png" alt="..." />
+                    <img src="https://i.postimg.cc/NjgDG9nm/16.png" alt="..." />
+                    <img src="https://i.postimg.cc/tgcNzr4N/17.png" alt="..." />
+                    <img src="https://i.postimg.cc/TP1cg8fP/18.png" alt="..." />
+                    <img src="https://i.postimg.cc/85rBXhFQ/19.png" alt="..." />
+                    <img src="https://i.postimg.cc/j206pLNW/20.png" alt="..." />
                   </Carousel>
                 </div>
               </Accordion.Content>

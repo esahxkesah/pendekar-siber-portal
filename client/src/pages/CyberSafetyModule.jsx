@@ -68,7 +68,7 @@ export default function CyberSafetyModule() {
             <p className="text-gray-700 dark:text-gray-400">
               Explore resources to protect against sexual exploitation online.
             </p>
-            <Link to="/SexualExploitation">
+            <Link to="/sexualexploitation">
               <Button className="mt-4 btn-primary w-full">
                 Learn More
               </Button>

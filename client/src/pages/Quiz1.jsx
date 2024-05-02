@@ -581,14 +581,8 @@ export default function Quiz1() {
               completeForm();
             }, 500);
           }}
-        />
-      </div>
-      {formData && (
-        <div>
-          <h3>Submitted Data:</h3>
-          <pre>{JSON.stringify(formData, null, 2)}</pre>
+          />
         </div>
-      )}
-    </div>
-  );
-}
+      </div>
+    );
+  }
