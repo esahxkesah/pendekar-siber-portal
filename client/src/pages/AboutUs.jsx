@@ -1,40 +1,115 @@
-import { Accordion, Carousel } from "flowbite-react";
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
+import { Carousel } from 'flowbite-react';
 
-export default function AboutUs() {
+const AboutUs = () => {
+  const event1Ref = useRef(null);
+  const event2Ref = useRef(null);
+  const event3Ref = useRef(null);
+  const event4Ref = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white "> About Us</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-    </div>
+      <div className="text-center py-3">
+        <h1 style={{  paddingBottom: "40px" }} className="text-3xl font-bold text-center text-gray-900 dark:text-white ">About Us</h1>
+      </div>
 
-      <div className="frame rounded-lg shadow-md">
-        <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
+      {/* Navigation */}
+      <nav className="mb-14">
+        <ul className="flex justify-center space-x-8">
+          <li>
+            <button
+              className="navigation-button" style={{
+                fontWeight: 'bold',
+                fontSize: '1.2rem',
+                backgroundColor: '#f3f3f3', // Light gray background color
+                padding: '10px 20px', // Padding for the button
+                borderRadius: '8px', // Rounded corners
+                border: 'none', // No border
+                cursor: 'pointer', // Pointer cursor on hover
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)', // Shadow border with dark gray color
+                transition: 'background-color 0.3s ease', // Smooth transition for background color
+                color: 'darkblue' // Text color set to dark blue
+              }}
+              onClick={() => scrollToSection(event1Ref)}> Pendekar Siber’s <br></br>School Holiday Program 
+            </button>
+          </li>
+
+          <li>
+            <button
+              className="navigation-button" style={{
+                fontWeight: 'bold',
+                fontSize: '1.2rem',
+                backgroundColor: '#f3f3f3', // Light gray background color
+                padding: '10px 20px', // Padding for the button
+                borderRadius: '8px', // Rounded corners
+                border: 'none', // No border
+                cursor: 'pointer', // Pointer cursor on hover
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)', // Shadow border with dark gray color
+                transition: 'background-color 0.3s ease', // Smooth transition for background color
+                color: 'darkblue' // Text color set to dark blue
+              }}
+              onClick={() => scrollToSection(event1Ref)}> Jom Jadi Pendekar Siber <br></br>at AYG Puchong
+            </button>
+          </li>
+
+          <li>
+            <button
+              className="navigation-button" style={{
+                fontWeight: 'bold',
+                fontSize: '1.2rem',
+                backgroundColor: '#f3f3f3', // Light gray background color
+                padding: '10px 20px', // Padding for the button
+                borderRadius: '8px', // Rounded corners
+                border: 'none', // No border
+                cursor: 'pointer', // Pointer cursor on hover
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)', // Shadow border with dark gray color
+                transition: 'background-color 0.3s ease', // Smooth transition for background color
+                color: 'darkblue' // Text color set to dark blue
+              }}
+              onClick={() => scrollToSection(event1Ref)}> The Pendekar Siber <br></br>Youth Program
+            </button>
+          </li>
+
+          <li>
+            <button
+              className="navigation-button" style={{
+                fontWeight: 'bold',
+                fontSize: '1.2rem',
+                backgroundColor: '#f3f3f3', // Light gray background color
+                padding: '10px 20px', // Padding for the button
+                borderRadius: '8px', // Rounded corners
+                border: 'none', // No border
+                cursor: 'pointer', // Pointer cursor on hover
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)', // Shadow border with dark gray color
+                transition: 'background-color 0.3s ease', // Smooth transition for background color
+                color: 'darkblue' // Text color set to dark blue
+              }}
+              onClick={() => scrollToSection(event1Ref)}> Site Visit to Bank Islam
+            </button>
+            </li>
           
-    {/* Add picture here */}
-    <div className="flex justify-center p-8 ">
-      <img src="https://export-download.canva.com/eXeiI/DAGAGdeXeiI/6/0/0001-4215794907038593931.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240421%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240421T151127Z&X-Amz-Expires=71136&X-Amz-Signature=700023ea9387ee2df07c20320c8490b28f265de327cc8cf75ecab5159de11a6c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B filename%2A%3DUTF-8%27%27Copy%2520of%2520Pendekar%2520Siber%2520Banner%25203x1.png&response-expires=Mon%2C 22 Apr 2024 10%3A57%3A03 GMT" alt="About Us Banner" className="w-full max-w-6xl" />
-    </div>
+        </ul>
+      </nav>
+      
+      <div className="frame rounded-lg shadow-md p-8">
 
-          <Accordion collapseAll>
-            <Accordion.Panel>
 
-{/* start part background */}
-              <Accordion.Title><strong>Background of Pendekar Siber</strong></Accordion.Title>
-              <Accordion.Content>
-                <p style={{ textAlign: 'justify' }}className="mb-2 text-gray-500 dark:text-gray-400">
-                The "Pendekar Siber" program comprised a series of interactive workshops and educational activities designed to engage children and enhance their understanding of cybersecurity. These workshops covered various topics, including safe internet practices, identifying and avoiding online threats, protecting personal information, and responsible digital citizenship. We incorporated age-appropriate teaching methods, incorporating games, role-playing, and real-life case studies to make the learning experience enjoyable and relatable. <br></br><br></br>
-                Furthermore, we organized community awareness campaigns, where we conducted outreach sessions with parents, guardians, and educators. By involving the entire community, we aimed to foster a collaborative and supportive environment for children's online safety. We distributed informative brochures and held open forums, encouraging dialogue and addressing concerns related to cybersecurity.<br></br><br></br>
-                Through the "Pendekar Siber" project, our goal was to empower children and equip them with the necessary skills to protect themselves in the digital world. Leveraging expertise and resources from relevant organizations, we aimed to maximize our impact. Together, we aimed to create a safer online environment for our community's children, ensuring they have the knowledge and confidence to navigate the internet securely.<br></br>
-                </p>  
-              </Accordion.Content>
-            </Accordion.Panel>
-{/* end part background */}
-
-{/* start of part 1 with the slide gambor */}
-            <Accordion.Panel>
-            <Accordion.Title><strong>Pendekar Siber’s School Holiday Program & CyberParenting Talk</strong></Accordion.Title>
-              <Accordion.Content>
-              <p style={{ textAlign: 'justify' }}className="mb-2 text-gray-500 dark:text-gray-400">
+        <section ref={event1Ref} className="mb-8" style={{  paddingBottom: "40px" }}  >
+          <h2 className="text-2xl font-bold mb-4" style={{ textAlign: 'left', paddingLeft: "80px" }}>Pendekar Siber’s School Holiday Program & CyberParenting Talk</h2>
+          <p style={{ textAlign: 'justify' ,  paddingLeft: "80px" , paddingRight: "80px" }}className="mb-2 text-gray-500 dark:text-gray-400">
                 PROGRAM DETAILS<br></br><br></br>
                 <strong>Title:</strong> Pendekar Siber’s School Holiday Program & CyberParenting Talk <br></br>
                 <strong>Date & Day: </strong>16th December 2022, Friday<br></br>
@@ -42,29 +117,24 @@ export default function AboutUs() {
                 <strong>Time:</strong> 8.30 AM - 5.30 PM<br></br><br></br>
                 
                 On 16th December 2022, a school holiday programme was conducted in KICT in increasing the awareness of cybersafety among youth between the ages of 8-17 years old. Many activities were done in relation to the usage of the internet such as Explorace, Binary code activity, Creative content workshop & Cyber safety games.<br></br><br></br>
-                At 9.00 AM - 10.00 AM, parents were invited to come and listen to CyberParenting Talk for a sharing session by Dr. Nurul Nuha. In this session, Dr Nuha engaged with parents in regards to the safety and the importance of monitoring the children. Majority of them were already aware in relation to this issue and finding ways to monitor their children at the same time balancing their freedom to explore safely. <br></br><br></br>
+                At 9.00 AM - 10.00 AM, parents were invited to come and listen to CyberParenting Talk for a sharing session by Dr. Nurul Nuha. In this session, Dr Nuha engaged with parents in regards to the safety and the importance of monitoring the children. Majority of them were already aware in relation to this issue and finding ways to monitor their children at the same time balancing their freedom to explore safely. 
                 </p>
-
+                
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
-                <Carousel slideInterval={7000}>
-                  <img src="https://i.postimg.cc/gJf4GM92/9.png" alt="..." />
-                  <img src="https://i.postimg.cc/c1nXFNYg/10.png" alt="..." />
-                  <img src="https://i.postimg.cc/3RynMscq/11.png" alt="..." />
-                  <img src="https://i.postimg.cc/L5LD5zRB/12.png" alt="..." />
-                  <img src="https://i.postimg.cc/SNbV5t7Z/13.png" alt="..." />                
+                <Carousel slideInterval={5000} style={{paddingRight: "100px"  , paddingLeft: "100px" }}>
+                  <img src="https://i.postimg.cc/mDDw2Fv2/9.png"  alt="..." />
+                  <img src="https://i.postimg.cc/k5MZKG0L/10.png" alt="..." />
+                  <img src="https://i.postimg.cc/kgmLMffJ/11.png" alt="..." />
+                  <img src="https://i.postimg.cc/DystKtQp/12.png" alt="..." />
+                  <img src="https://i.postimg.cc/zBckLGNw/13.png" alt="..." />                
                 </Carousel>
                 </div>
-              </Accordion.Content>
-            </Accordion.Panel>
-{/* end of part 1 with the slide gambor */}
-
-
- {/* start of part 2 with the slide gambor */}
- <Accordion.Panel>
-            <Accordion.Title><strong>Jom Jadi Pendekar Siber at AYG Puchong </strong></Accordion.Title>
-              <Accordion.Content>
-              <p style={{ textAlign: 'justify' }}className="mb-2 text-gray-500 dark:text-gray-400">
+        </section><hr style={{ border: '1px solid #ccc'}}/>
+        
+        <section ref={event2Ref} className="mb-8" style={{  paddingTop: "60px", paddingBottom: "40px" }} >
+        <h2 className="text-2xl font-bold mb-4" style={{ textAlign: 'left', paddingLeft: "80px" }}>Jom Jadi Pendekar Siber at AYG Puchong</h2>
+          <p style={{ textAlign: 'justify' , paddingLeft: "80px" , paddingRight: "80px" }}className="mb-2 text-gray-500 dark:text-gray-400">
                 PROGRAM DETAILS<br></br><br></br>
                <strong>Organizer:</strong>  Pendekar Siber (SCSH  3164) Section 22 Semester 2, 22/23<br></br>
                <strong>Collaborator:</strong>  AYG Puchong<br></br>
@@ -78,7 +148,7 @@ export default function AboutUs() {
                 </p>
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
-                  <Carousel slideInterval={7000}>
+                <Carousel slideInterval={5000} style={{paddingRight: "100px"  , paddingLeft: "100px" }}>
                   <img src="https://i.postimg.cc/rsrn4BG4/1.png" alt="..." />
                   <img src="https://i.postimg.cc/vZMq1S41/2.png" alt="..." />
                   <img src="https://i.postimg.cc/TPNC4dCm/3.png" alt="..." />
@@ -89,17 +159,13 @@ export default function AboutUs() {
                   <img src="https://i.postimg.cc/TP3t0Lqf/8.png" alt="..." />   
                     </Carousel>
                 </div>
-              </Accordion.Content>
-            </Accordion.Panel>
-  {/* end of part 2 with the slide gambor */}
+        </section><hr style={{ border: '1px solid #ccc' }}/>
 
-  {/* start of part 3 with the slide gambor */}
-   <Accordion.Panel>
-            <Accordion.Title><strong>The Pendekar Siber Youth Program </strong></Accordion.Title>
-              <Accordion.Content>
-              <p style={{ textAlign: 'justify' }}className="mb-2 text-gray-500 dark:text-gray-400">
+        <section ref={event3Ref} className="mb-8" style={{  paddingTop: "60px", paddingBottom: "40px" }} >
+          <h2 className="text-2xl font-bold mb-4" style={{ textAlign: 'left', paddingLeft: "80px" }}>The Pendekar Siber Youth Program</h2>
+          <p style={{ textAlign: 'justify', paddingLeft: "80px" , paddingRight: "80px" }}className="mb-2 text-gray-500 dark:text-gray-400">
                 PROGRAM DETAILS<br></br><br></br>
-               <strong>Organizer:</strong>  Pendekar Siber (SCSH  3164) Section 33 Semester 1, 23/24 <br></br>
+                <strong>Organizer:</strong>  Pendekar Siber (SCSH  3164) Section 33 Semester 1, 23/24 <br></br>
                <strong>Collaborator:</strong>  SMK Seksyen 9 Shah Alam <br></br>
                <strong>Target Participants:</strong> 100 of 15-year-old students in SMK Shah Alam Seksyen 9 <br></br>
                <strong>Date of Program:</strong>  13th January 2024 (Saturday)<br></br>
@@ -110,27 +176,28 @@ export default function AboutUs() {
                 Reflecting on the experience, we identified the need for more frequent exposure to cybersecurity matters among youth. While students demonstrated theoretical understanding, there was a gap in practical application. This underscores the importance of continuous education in cybersecurity.<br></br><br></br>
                 In conclusion, the program left a lasting impact by enhancing students' awareness and understanding of cyber threats. Moving forward, sustaining this momentum through ongoing education and practical application is crucial for empowering students to navigate the digital world safely.
                </p>
+                
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
-                  <Carousel slideInterval={7000}>
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-                  </Carousel>
+                <Carousel slideInterval={5000} style={{paddingRight: "100px"  , paddingLeft: "100px" }}>
+                    <img src="https://i.postimg.cc/1RVdpLdR/21.png" alt="..." />   
+                    <img src="https://i.postimg.cc/RZ4bxqZq/22.png" alt="..." />
+                    <img src="https://i.postimg.cc/Kzws6N1y/23.png" alt="..." />
+                    <img src="https://i.postimg.cc/Rhtb4HtJ/24.png" alt="..." />
+                    <img src="https://i.postimg.cc/7YvWXKv3/25.png" alt="..." />
+                    <img src="https://i.postimg.cc/4NzF0pZr/26.png" alt="..." />     
+                    <img src="https://i.postimg.cc/pLCcWxmC/27.png" alt="..." />
+                    <img src="https://i.postimg.cc/0NNWr3ms/28.png" alt="..." />
+                    <img src="https://i.postimg.cc/j5wM47Z3/29.png" alt="..." />
+                </Carousel>
                 </div>
-              </Accordion.Content>
-            </Accordion.Panel>
-  {/* end of part 3 with the slide gambor */}
+        </section><hr style={{ border: '1px solid #ccc'}}/>
 
-  {/* start of part 4 with the slide gambor */}
-     <Accordion.Panel>
-            <Accordion.Title><strong>Site Visit to Bank Islam </strong></Accordion.Title>
-              <Accordion.Content>
-              <p style={{ textAlign: 'justify' }}className="mb-2 text-gray-500 dark:text-gray-400">
+        <section ref={event4Ref} className="mb-8" style={{  paddingTop: "60px" }}  >
+          <h2 className="text-2xl font-bold mb-4" style={{ textAlign: 'left', paddingLeft: "80px" }}>Site Visit to Bank Islam </h2>
+          <p style={{ textAlign: 'justify', paddingLeft: "80px" , paddingRight: "80px" }}className="mb-2 text-gray-500 dark:text-gray-400">
                 PROGRAM DETAILS<br></br><br></br>
-               <strong>Organizer:</strong>  Pendekar Siber (SCSH  3164) Section 33 Semester 1, 23/24 <br></br>
+                <strong>Organizer:</strong>  Pendekar Siber (SCSH  3164) Section 33 Semester 1, 23/24 <br></br>
                <strong>Collaborator:</strong>  Bank Islam <br></br>
                <strong>Target Participants:</strong> Usrah In Action 1 & 2 Pendekar Siber <br></br>
                <strong>Date of Program:</strong>  2nd June 2023 (Friday)<br></br>
@@ -140,27 +207,30 @@ export default function AboutUs() {
                The subsequent presentation by the E-channels Fraud Team, led by Puan Siti Rossimawati Semong, offered valuable insights into real-life cases of fraudulent activities encountered by Bank Islam's customers. These anecdotes underscored the critical importance of awareness and proactive measures in fraud prevention. Additionally, participants engaged in a lively Q&A session, seeking clarification and further information from the experts, fostering an atmosphere of collaborative learning.<br></br><br></br>
                En. Zaim's discussion on career opportunities within Bank Islam offered aspiring professionals a glimpse into the various roles and growth prospects available within the organization, inspiring attendees to consider a career in the dynamic banking sector. The event concluded with a reflection on the significance of continuous learning and the cultivation of a robust cybersecurity culture, leaving participants empowered with knowledge and determination to combat cyber threats effectively. Overall, the event provided a valuable platform for networking, learning, and exploration of career opportunities in cybersecurity and banking.
                 </p>
-
+                
                 {/* part untuk gambar gambar */}
                 <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-8">
-                  <Carousel slideInterval={7000}>
-                    <img src="https://i.postimg.cc/13JH8RxT/14.png" alt="..." />
-                    <img src="https://i.postimg.cc/9FP1jtLc/15.png" alt="..." />
-                    <img src="https://i.postimg.cc/NjgDG9nm/16.png" alt="..." />
-                    <img src="https://i.postimg.cc/tgcNzr4N/17.png" alt="..." />
-                    <img src="https://i.postimg.cc/TP1cg8fP/18.png" alt="..." />
-                    <img src="https://i.postimg.cc/85rBXhFQ/19.png" alt="..." />
-                    <img src="https://i.postimg.cc/j206pLNW/20.png" alt="..." />
-                  </Carousel>
+                <Carousel slideInterval={5000} style={{paddingRight: "100px"  , paddingLeft: "100px" }}>
+                    <img src="https://i.postimg.cc/BZRdkqF1/14.png" alt="..." />
+                    <img src="https://i.postimg.cc/bw9WZkBQ/15.png" alt="..." />
+                    <img src="https://i.postimg.cc/BtWcg7XX/16.png" alt="..." />
+                    <img src="https://i.postimg.cc/XNrRsZrb/17.png" alt="..." />
+                    <img src="https://i.postimg.cc/90wYyHX6/18.png" alt="..." />
+                    <img src="https://i.postimg.cc/jj81XKK2/19.png" alt="..." />
+                    <img src="https://i.postimg.cc/xCc4p7TR/20.png" alt="..." />            
+                </Carousel>
                 </div>
-              </Accordion.Content>
-            </Accordion.Panel>
-  {/* end of part 4 with the slide gambor */}
+        </section>
 
-  {/* part penutup, jangan delete */}
-          </Accordion>
-        </div>
+<button
+          className="fixed bottom-8 right-8 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+          onClick={scrollToTop}
+        >
+          Scroll to Top
+        </button>
       </div>
-    </div>
+      </div>
   );
-}
+};
+
+export default AboutUs;
