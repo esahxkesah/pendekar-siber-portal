@@ -25,6 +25,12 @@ export default function CyberSafetyModule() {
                 Learn More
               </Button>
             </Link>
+            {/* Add button for quiz */}
+            <Link to="/cyberbullying-quiz">
+              <Button className="mt-2 btn-secondary w-full">
+                Take Quiz
+              </Button>
+            </Link>
           </div>
         </Card>
 
@@ -43,6 +49,12 @@ export default function CyberSafetyModule() {
                 Learn More
               </Button>
             </Link>
+            {/* Add button for quiz */}
+            <Link to="/gamingdisorder-quiz">
+              <Button className="mt-2 btn-secondary w-full">
+                Take Quiz
+              </Button>
+            </Link>
           </div>
         </Card>
 
@@ -56,9 +68,15 @@ export default function CyberSafetyModule() {
             <p className="text-gray-700 dark:text-gray-400">
               Explore resources to protect against sexual exploitation online.
             </p>
-            <Link to="/SexualExploitation">
-              <Button className="mt-4 w-full blue">
+            <Link to="/sexualexploitation">
+              <Button className="mt-4 btn-primary w-full">
                 Learn More
+              </Button>
+            </Link>
+            {/* Add button for quiz */}
+            <Link to="/sexual-exploitation-quiz">
+              <Button className="mt-2 btn-secondary w-full">
+                Take Quiz
               </Button>
             </Link>
           </div>

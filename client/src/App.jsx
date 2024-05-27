@@ -7,7 +7,6 @@ import CyberSafetyModule from "./pages/CyberSafetyModule"
 import CyberSecurityCareer from "./pages/CyberSecurityCareer"
 import Dashboard from "./pages/Dashboard"
 import PersonalityTest from "./pages/PersonalityTest"
-import Quiz from "./pages/Quiz"
 import DiscussionForum from "./pages/DiscussionForum"
 import Project from "./pages/Project"
 import Header from "./components/Header"
@@ -22,6 +21,10 @@ import UpdatePost from "./pages/UpdatePost"
 import PostPage from "./pages/PostPage"
 import ScrollToTop from "./components/ScrollToTop"
 import Search from "./pages/Search"
+import Quiz1 from "./pages/Quiz1"
+import Quiz2 from "./pages/Quiz2"
+import Quiz3 from "./pages/Quiz3"
+
 
 
 export default function App() {
@@ -47,7 +50,9 @@ export default function App() {
       <Route path="/cybersecuritycareer" element={<CyberSecurityCareer />}/>
      
       <Route path="/personalitytest" element={<PersonalityTest />}/>
-      <Route path="/quiz" element={<Quiz />}/>
+      <Route path="/cyberbullying-quiz" element={<Quiz1 />}/>
+      <Route path="/gamingdisorder-quiz" element={<Quiz2 />}/>
+      <Route path="/sexual-exploitation-quiz" element={<Quiz3 />}/>
       <Route path="/discussionforum" element={<DiscussionForum />}/>
       <Route path="/cyberbullying" element={<CyberbullyingPage />}/>
       <Route path="/sexualexploitation" element={<SexualExploitationPage />}/>
