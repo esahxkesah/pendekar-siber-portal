@@ -21,14 +21,14 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-
               <Footer.Title title='About' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.100jsprojects.com'
+                  href='https://flagship.iium.edu.my/sibersejahtera/2019/10/19/home/#'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   Siber Sejahtera
                 </Footer.Link>
                 <Footer.Link
-                  href='/about'
+                  href='/aboutus'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -46,7 +46,6 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-
                 >
                   Github
                 </Footer.Link>
-                <Footer.Link href='#'>Discord</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>

@@ -46,7 +46,7 @@ const GamingDisorderPage = () => {
   <p style={{ textAlign: 'justify' }}>
     <strong>Gaming disorder is a mental health condition recognized by the World Health Organization (WHO) characterized by a pattern of persistent and recurrent gaming behavior, either online or offline, that leads to significant impairment or distress. This disorder typically involves a loss of control over gaming, prioritizing gaming over other activities, and continuing to play despite negative consequences.</strong>
   </p><br></br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ71KAO0mtc?si=7VvibMn2qn2-BrXf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br><br></br>
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/lJ71KAO0mtc?si=7VvibMn2qn2-BrXf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br><br></br>
   <p style={{ textAlign: 'justify' }}><strong> Here's why gaming disorder can happen:</strong></p>
 
   <ol>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-import { Button, Card } from "flowbite-react";
+import { Button, Card, Accordion } from "flowbite-react";
 import { Link } from 'react-router-dom';
 import cyberbullyingImage from "../assets/img/cyberbullying.png";
 import gamingDisorderImage from "../assets/img/gaming_disorder.png";
@@ -9,6 +9,9 @@ import logopendekarsiber from "../assets/img/logo.png";
 import sdg4 from "../assets/img/sdg4.png";
 import sdg8 from "../assets/img/sdg8.png";
 import sdg16 from "../assets/img/sdg16.png";
+import sdg12 from "../assets/img/sdg12.png";
+import careers from "../assets/img/careers.png";
+import holland from "../assets/img/holland.png";
 
 const Home = () => {
   return (
@@ -44,7 +47,6 @@ const Home = () => {
       Who is Pendekar Siber?
     </h5>
     <p className="font-normal">
-      It is in Malay language which means a cyber warrior. 
 
       A computer expert engaged in the defence of information systems against cyber attacks.|        
     </p>
@@ -74,26 +76,96 @@ const Home = () => {
               <img src={sdg8} alt="SDG8" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
             </div>
             <div className="w-1/3 p-2"> {/* Add padding */}
-              <img src={sdg16} alt="SDG16" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
-            </div>
-          </div>
-        </div>
-           {/* Yellow Container */}
-           <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Maqasid Syariah</h1>
-        <div className="bg-yellow-100 p-4 rounded-lg my-6 mx-auto max-w-3xl"> {/* Smaller container */}
-          {/* Images */}
-          <div className="flex justify-between">
-            <div className="w-1/3 p-2"> {/* Add padding */}
-              <img src={sdg4} alt="SDG4" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
-            </div>
-            <div className="w-1/3 p-2"> {/* Add padding */}
-              <img src={sdg8} alt="SDG8" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
+              <img src={sdg12} alt="SDG16" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
             </div>
             <div className="w-1/3 p-2"> {/* Add padding */}
               <img src={sdg16} alt="SDG16" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
             </div>
           </div>
         </div>
+
+  {/* Yellow Container */}
+  <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Aligning within Maqasid Syariah</h1>
+
+  <div className="bg-yellow-100 dark:bg-blue-100 p-4 rounded-lg my-6 mx-auto max-w-3xl">
+      <div className="p-4 rounded-lg my-6 mx-auto max-w-3xl " color={false}> {/* Smaller container */}
+        <Accordion >
+          <Accordion.Panel>
+            <Accordion.Title className="bold dark:text-white">1. Protection of Faith</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-900 dark:text-gray-400">
+              Avoid cyber propaganda that may affect our Islamic faith
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title className="text-black">2. Protection of Life</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-900 dark:text-gray-400">
+              Educate each other about the personal cybersafety, mental health & national security
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title className="text-black">3. Protection of Intellect </Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-900 dark:text-gray-400">
+              Avoid fake news, always check the validity of the info before sharing them (Surah Al Hujurat:6)
+              </p>
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title className="text-black"> 4. Protection of Lineage 
+           </Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-900 dark:text-gray-400">
+              Educate our children about cyberethics, cybersafety & cybersecurity
+              </p>
+            
+            </Accordion.Content>
+          </Accordion.Panel>
+          <Accordion.Panel>
+            <Accordion.Title className="text-black">5. Protection of Wealth
+</Accordion.Title>
+            <Accordion.Content>
+              <p className="mb-2 text-gray-900 dark:text-gray-400">
+              Avoid monetary losses due to cybersecurity attacks and financial fraud
+              </p>
+              
+            </Accordion.Content>
+          </Accordion.Panel>
+        </Accordion>
+      </div>
+    </div>
+
+      {/* Yellow Container */}
+<div className="bg-yellow-100 p-4 rounded-lg my-6 mx-auto max-w-3xl"> {/* Smaller container */}
+  {/* Content */}
+  <div className="flex items-center justify-between">
+    {/* Left side: Image */}
+    <div className="w-1/3 p-2"> {/* Add padding */}
+      <img src={careers} alt="careers" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
+    </div>
+    <div className="w-1/3 p-2"> {/* Add padding */}
+      <img src={holland} alt="holland" className="w-full h-auto object-cover rounded-lg" /> {/* Adjust size if needed */}
+    </div>  
+    {/* Right side: Text and Button */}
+    <div className="w-2/3 p-2">
+      {/* Short text */}
+      <p className="text-3xl font-bold text-center text-gray-900 pb-5">Discover careers <br></br>in cybersecurity!</p>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+  <Link to="/cybersecuritycareer">
+    <Button style={{ width: '200px', height: '50px' }}>
+      Explore
+    </Button>
+  </Link>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
 
       </div>
       <div className="container mx-auto p-8">

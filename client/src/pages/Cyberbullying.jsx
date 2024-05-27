@@ -41,7 +41,7 @@ const CyberbullyingPage = () => {
         <section ref={whatRef} className="mb-8" >
           <h2 className="text-3xl font-bold mb-4" style={{ textAlign: 'center' }}>What is Cyberbullying</h2>
           <p style={{ textAlign: 'justify' }}><strong>Cyberbullying is a pervasive issue in today's digital age, characterized by the use of electronic communication to harass, intimidate, or harm others. It takes various forms, including spreading rumors, sharing embarrassing or manipulated photos or videos, or sending threatening messages.<br></br><br></br>Unlike traditional bullying, cyberbullying can occur 24/7 and reach a wide audience instantly, making it particularly insidious and difficult to escape. The fact is that cyberbullying happens more often than we think, and some of the most severe cases lead to the loss of lives.</strong><br></br><br></br></p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/niaDJdEXk9U?si=55vpP579MGTjZ1qe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br><br></br>
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/niaDJdEXk9U?si=55vpP579MGTjZ1qe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br></br><br></br>
           <p style={{ textAlign: 'justify' }}><strong>Here are some common types of cyberbullying: </strong></p><br></br>
           <ul>
   <li>

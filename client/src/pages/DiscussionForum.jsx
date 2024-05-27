@@ -24,13 +24,20 @@ function DiscussionForum() {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {/* Render each post */}
-      {posts.map(post => (
-        <PostCard key={post._id} post={post} />
-      ))}
-      {/* Example of linking to individual post */}
-      {/* <Link to="/post/post-slug-here">Read More</Link> */}
+    <div className="container mx-auto p-8">
+      <div className="text-center py-3">
+        <h1 style={{ paddingBottom: "40px" }} className="text-3xl font-bold text-center ">Discussion Forum</h1>
+        <h2 style={{ paddingBottom: "40px" }} className="text-3xl font-bold text-center ">Express and share your thoughts with others.</h2>
+      </div>
+
+      <div className="flex flex-wrap justify-center">
+        {/* Render each post */}
+        {posts.map(post => (
+          <PostCard key={post._id} post={post} />
+        ))}
+        {/* Example of linking to individual post */}
+        {/* <Link to="/post/post-slug-here">Read More</Link> */}
+      </div>
     </div>
   );
 }

@@ -22,8 +22,8 @@ import PostPage from "./pages/PostPage"
 import ScrollToTop from "./components/ScrollToTop"
 import Search from "./pages/Search"
 import Quiz1 from "./pages/Quiz1"
-import Quiz2 from "./pages/Quiz2"
-import Quiz3 from "./pages/Quiz3"
+import Quiz2 from "./pages/Quiz3"
+import Quiz3 from "./pages/Quiz2"
 
 
 
