@@ -61,7 +61,7 @@ function DiscussionForum() {
         <h2 style={{ paddingBottom: "40px" }} className="text-3xl font-bold text-center">Express and share your thoughts with others.</h2>
         
         {/* Conditionally render the "Create a Post" button */}
-        {(currentUser?.isAdmin || currentUser.isRegistered) ? (
+        {(currentUser?.isAdmin) ? (
           <Link to={'/create-post'}>
   <Button type='button' gradientDuoTone='purpleToPink' className="w-64 h-12 text-lg mx-auto flex items-center justify-center">
     <HiOutlinePencilAlt className="mr-2" /> Create a Post
