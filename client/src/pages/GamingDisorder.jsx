@@ -20,7 +20,7 @@ const GamingDisorderPage = () => {
   return (
     <div className="container mx-auto p-8">
     <div className="frame rounded-lg shadow-md p-8">
-      <Link to="/CyberSafetyModule" className="inline-block rounded-lg py-1 px-2 bg-blue-500 text-white hover:bg-blue-600 transition duration-300 mb-8">
+      <Link to="/CyberSafetyModule" className="inline-block rounded-lg py-3 px-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300 mb-8">
         <BsArrowLeft className="inline-block mr-2" /> Back to CyberSafety Modules
       </Link>
 

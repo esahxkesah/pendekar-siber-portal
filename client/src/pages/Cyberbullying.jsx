@@ -19,7 +19,7 @@ const CyberbullyingPage = () => {
   return (
     <div className="container mx-auto p-8">
     <div className="frame rounded-lg shadow-md p-8">
-      <Link to="/CyberSafetyModule" className="inline-block rounded-lg py-1 px-2 bg-blue-500 text-white hover:bg-blue-600 transition duration-300 mb-8">
+      <Link to="/CyberSafetyModule" className="inline-block rounded-lg py-3 px-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300 mb-8">
         <BsArrowLeft className="inline-block mr-2" /> Back to CyberSafety Modules
       </Link>
       <div className="text-center bg-blue-800 py-3">
@@ -93,9 +93,34 @@ const CyberbullyingPage = () => {
   <strong> 
 Below are a few instances of cyberbullying that occurred in Malaysia, along with links to the respective cases: </strong>
     <ul>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://www.sinardaily.my/article/177853/focus/national/mother-of-three-believed-to-have-committed-suicide-after-alleged-cyber-bullying"><u>a) Mother of three believed to have committed suicide after alleged cyber bullying.</u></a> <br></br> <br></br><img src="https://www.sinarharian.com.my/sinarenglish/uploads/images/2022/08/09/1867031.jpg"style={{ width: '30%' }} /></li><br></br>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://amp.theguardian.com/world/2019/may/15/teenage-girl-kills-herself-after-instagram-poll-in-malaysia"><u>b) Teenage girl kills herself ‘after Instagram poll’ in Malaysia.</u></a> <br></br> <br></br><img src="https://i.guim.co.uk/img/media/e35416b45cb5dba002dc9bbd7bbf495e311aa16d/0_0_2007_1204/master/2007.jpg?width=620&quality=85&auto=format&fit=max&s=65b8aa5f07b130002a2b44b627cd4ea6" style={{ width: '30%' }} /></li><br></br>
-      <li style={{ marginLeft: '20px' }}><br></br><a href="https://worldofbuzz.com/20yo-girl-from-penang-committed-suicide-after-fb-page-spread-fake-info-cyberbullied-her"><u>c) 20 years old girl from Penang committed suicide after Facebook Page spread fake info and cyberbullied her.</u></a> <br></br><br></br><img src="https://worldofbuzz.com/wp-content/uploads/2020/05/newft.jpg" style={{ width: '30%' }}/></li><br></br><br></br><br></br>
+    <li style={{ marginLeft: '20px', textAlign: 'center' }}> {/* Center align the content */}
+  <br /><br />
+  <a href="https://www.sinardaily.my/article/177853/focus/national/mother-of-three-believed-to-have-committed-suicide-after-alleged-cyber-bullying">
+    <u>a) Mother of three believed to have committed suicide after alleged cyber bullying.</u>
+  </a>
+  <br /><br />
+  <img src="https://www.sinarharian.com.my/sinarenglish/uploads/images/2022/08/09/1867031.jpg" style={{ width: '30%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', margin: 'auto' }} /> {/* Center the image and add shadow and border radius */}
+</li>
+<br /><br />
+<li style={{ marginLeft: '20px', textAlign: 'center' }}> {/* Center align the content */}
+  <br /><br />
+  <a href="https://amp.theguardian.com/world/2019/may/15/teenage-girl-kills-herself-after-instagram-poll-in-malaysia">
+    <u>b) Teenage girl kills herself ‘after Instagram poll’ in Malaysia.</u>
+  </a>
+  <br /><br />
+  <img src="https://i.guim.co.uk/img/media/e35416b45cb5dba002dc9bbd7bbf495e311aa16d/0_0_2007_1204/master/2007.jpg?width=620&quality=85&auto=format&fit=max&s=65b8aa5f07b130002a2b44b627cd4ea6" style={{ width: '30%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', margin: 'auto' }} /> {/* Center the image and add shadow and border radius */}
+</li>
+<br /><br />
+<li style={{ marginLeft: '20px', textAlign: 'center' }}> {/* Center align the content */}
+  <br /><br />
+  <a href="https://worldofbuzz.com/20yo-girl-from-penang-committed-suicide-after-fb-page-spread-fake-info-cyberbullied-her">
+    <u>c) 20 years old girl from Penang committed suicide after Facebook Page spread fake info and cyberbullied her.</u>
+  </a>
+  <br /><br /><br /><br />
+  <img src="https://worldofbuzz.com/wp-content/uploads/2020/05/newft.jpg" style={{ width: '30%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', margin: 'auto' }} /> {/* Center the image and add shadow and border radius */}
+</li>
+<br /><br /><br /><br />
+
       </ul>
   </li>
 </ul>

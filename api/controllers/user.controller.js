@@ -43,6 +43,13 @@ export const updateUser = async (req, res, next) => {
           email: req.body.email,
           profilePicture: req.body.profilePicture,
           password: req.body.password,
+          education: req.body.education,
+          accomplishment: req.body.accomplishment,
+          interest: req.body.interest,
+          personalityType: req.body.personalityType,
+          quiz1: req.body.quiz1,
+          quiz2: req.body.quiz2,
+          quiz3: req.body.quiz3,
         },
       },
       { new: true }

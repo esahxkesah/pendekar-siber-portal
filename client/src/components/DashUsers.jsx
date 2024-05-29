@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 import { FaCheck, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function DashUsers() {
   const { currentUser } = useSelector((state) => state.user);
@@ -89,7 +90,11 @@ export default function DashUsers() {
                       className='w-10 h-10 object-cover bg-gray-500 rounded-full'
                     />
                   </Table.Cell>
-                  <Table.Cell>{user.username}</Table.Cell>
+                  <Table.Cell>  
+                    <Link to={`/user/${user._id}`} className="text-blue-500 hover:underline">
+                   {user.username}
+                  </Link>
+                  </Table.Cell>
                   <Table.Cell>{user.email}</Table.Cell>
                   <Table.Cell>
                     {user.isAdmin ? (

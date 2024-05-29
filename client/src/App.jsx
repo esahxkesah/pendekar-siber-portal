@@ -22,47 +22,49 @@ import PostPage from "./pages/PostPage"
 import ScrollToTop from "./components/ScrollToTop"
 import Search from "./pages/Search"
 import Quiz1 from "./pages/Quiz1"
-import Quiz2 from "./pages/Quiz3"
-import Quiz3 from "./pages/Quiz2"
-
-
+import Quiz2 from "./pages/Quiz2"
+import Quiz3 from "./pages/Quiz3"
+import UserProfile from "./components/UserProfile" // Import UserProfile component
+import OnlyRegisteredPrivateRoute from "./components/OnlyRegisteredPrivateRoute"
 
 export default function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop/>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/aboutus" element={<AboutUs/>}/>
-      <Route path="/sign-in" element={<SignIn />}/>
-      <Route path="/sign-up" element={<SignUp />}/>
-      <Route path='/search' element={<Search />} />
-      <Route element={<PrivateRoute/>}> 
-        <Route path="/dashboard" element={<Dashboard />}/>
+      <ScrollToTop/>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/aboutus" element={<AboutUs/>}/>
+        <Route path="/sign-in" element={<SignIn />}/>
+        <Route path="/sign-up" element={<SignUp />}/>
+        <Route path='/search' element={<Search />} />
+        <Route element={<PrivateRoute/>}> 
+          <Route path="/dashboard" element={<Dashboard />}/>
         </Route>
-      <Route element={<OnlyAdminPrivateRoute/>}> 
-        <Route path="/create-post" element={<CreatePost />}/>
-        <Route path="/update-post/:postId" element={<UpdatePost />}/>
-      </Route>
-      <Route path="/projects" element={<Project />}/>
-      <Route path="/cybersafetymodule" element={<CyberSafetyModule />}/>
-      <Route path="/cybersecuritycareer" element={<CyberSecurityCareer />}/>
-     
-      <Route path="/personalitytest" element={<PersonalityTest />}/>
-      <Route path="/cyberbullying-quiz" element={<Quiz1 />}/>
-      <Route path="/gamingdisorder-quiz" element={<Quiz2 />}/>
-      <Route path="/sexual-exploitation-quiz" element={<Quiz3 />}/>
-      <Route path="/discussionforum" element={<DiscussionForum />}/>
-      <Route path="/cyberbullying" element={<CyberbullyingPage />}/>
-      <Route path="/sexualexploitation" element={<SexualExploitationPage />}/>
-      <Route path="/gamingdisorder" element={<GamingDisorderPage />}/>
-      <Route path="/post/:postSlug" element={<PostPage />}/>
-
-
-    </Routes>
-    <Footer/>
+        <Route element={<OnlyAdminPrivateRoute/>}> 
+          <Route path="/create-post" element={<CreatePost />}/>
+          <Route path="/update-post/:postId" element={<UpdatePost />}/>
+        </Route>
+        <Route element={<OnlyRegisteredPrivateRoute/>}> 
+          <Route path="/create-post" element={<CreatePost />}/>
+          <Route path="/update-post/:postId" element={<UpdatePost />}/>
+        </Route>
+        <Route path="/projects" element={<Project />}/>
+        <Route path="/cybersafetymodule" element={<CyberSafetyModule />}/>
+        <Route path="/cybersecuritycareer" element={<CyberSecurityCareer />}/>
+        <Route path="/personalitytest" element={<PersonalityTest />}/>
+        <Route path="/cyberbullying-quiz" element={<Quiz1 />}/>
+        <Route path="/gamingdisorder-quiz" element={<Quiz2 />}/>
+        <Route path="/sexual-exploitation-quiz" element={<Quiz3 />}/>
+        <Route path="/discussionforum" element={<DiscussionForum />}/>
+        <Route path="/cyberbullying" element={<CyberbullyingPage />}/>
+        <Route path="/sexualexploitation" element={<SexualExploitationPage />}/>
+        <Route path="/gamingdisorder" element={<GamingDisorderPage />}/>
+        <Route path="/post/:postSlug" element={<PostPage />}/>
+        {/* Add route for UserProfile component */}
+        <Route path="/user/:userId" element={<UserProfile />}/>
+      </Routes>
+      <Footer/>
     </BrowserRouter>
-
-      )
+  )
 }
