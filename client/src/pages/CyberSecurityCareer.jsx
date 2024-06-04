@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Button } from "flowbite-react";
 import { Link } from 'react-router-dom';
 import news from "../assets/img/news.png";
+import academic from "../assets/img/academic.png";
 import holland from "../assets/img/holland.png";
 
 const AboutUs = () => {
@@ -115,9 +116,13 @@ const AboutUs = () => {
                 {/* part untuk gambar gambar */}
        
                 <div className="flex justify-center"> {/* Add padding */}
+              <img src={academic} alt="academic" className="w-auto object-cover rounded-lg" />
+            </div>
+            <br></br>
+            <div className="flex justify-center"> {/* Add padding */}
               <img src={news} alt="news" className="w-auto h-auto object-cover rounded-lg" />
             </div>
-            
+
         </section><hr style={{ border: '1px solid #ccc' }}/>
 
         <section ref={event2Ref} className="mb-8" style={{ paddingTop: "20px", paddingBottom: "20px" }}>
